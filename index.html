@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
+     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coleta Sustentável ES</title>
     <!-- Link para o arquivo CSS -->
     <link rel="stylesheet" href="styles.css">
     <!-- Fonte Roboto do Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Adicionando o script do Google Maps com a API Key -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
 </head>
 <body>
     <header>
@@ -25,10 +27,19 @@
     </header>
 
     <section id="home">
-        <h1>Coleta Sustentável no Espírito Santo</h1>
-        <p>Conectando empresas de coleta de lixo eletrônico com órgãos públicos e cidadãos, visando um estado mais sustentável.</p>
-        <button>Saiba Mais</button>
-    </section>
+    <div class="home-content">
+        <div class="home-text">
+            <h1>Coleta Sustentável no Espírito Santo</h1>
+            <p>Conectando empresas de coleta de lixo eletrônico com órgãos públicos e cidadãos, visando um estado mais sustentável.</p>
+            <button>Saiba Mais</button>
+        </div>
+        <!-- Adicionando a imagem ao lado direito -->
+        <div class="home-image">
+            <img src="3.jpg" alt="Imagem de Coleta Sustentável">
+        </div>
+    </div>
+</section>
+
 
     <section id="quem-somos">
         <h2>Quem Somos</h2>
@@ -79,3 +90,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
